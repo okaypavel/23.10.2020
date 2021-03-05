@@ -1,0 +1,255 @@
+.anim{
+    height: 2px;
+    width: 100%;
+    animation-name: anim;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    0% {
+        background-color: #ff0000;
+        color:  #ff0000;
+    }
+    4% {
+        background-color: #ff4000;
+        color: #ff4000;
+    }
+    8% {
+        background-color: #ff8000;
+        color: #ff8000;
+    }
+    12% {
+        background-color: #ffbf00;
+        color: #ffbf00;
+    }
+    16% {
+        background-color: #ffff00;
+        color: #ffff00;
+    }
+    20% {
+        background-color: #bfff00;
+        color: #bfff00;
+    }
+    24% {
+        background-color: #80ff00;
+        color: #80ff00;
+    }
+    28% {
+        background-color: #40ff00;
+        color:  #40ff00;
+    }
+    32% {
+        background-color: #00ff00;
+        color: #00ff00;
+    }
+    36% {
+        background-color: #00ff40;
+        color: #00ff40;
+    }
+    40% {
+        background-color: #00ff80;
+        color: #00ff80;
+    }
+    44% {
+        background-color: #00ffbf;
+        color:  #00ffbf;
+    }
+    48% {
+        background-color: #00ffff;
+        color: #00ffff;
+    }
+    52% {
+        background-color: #00bfff;
+        color: #00bfff;
+    }
+    56% {
+        background-color: #0080ff;
+        color: #0080ff;
+    }
+    60% {
+        background-color: #0040ff;
+        color: #0040ff;
+    }
+    64% {
+        background-color: #0000ff;
+        color: #0000ff;
+    }
+    68% {
+        background-color: #4000ff;
+        color: #4000ff;
+    }
+    72% {
+        background-color: #8000ff;
+        color: #8000ff;
+    }
+    76% {
+        background-color: #bf00ff;
+        color:  #bf00ff;
+    }
+    80% {
+        background-color: #ff00ff;
+        color: #ff00ff;
+    }
+    84% {
+        background-color: #ff00bf;
+        color: #ff00bf;
+    }
+    88% {
+        background-color: #ff0080;
+        color: #ff0080;
+    }
+    92% {
+        background-color: #ff0040;
+        color: #ff0040;
+    }
+    96% {
+        background-color: #ff0000;
+        color: #ff0000;
+    }
+    100% {
+        background-color: #ff0000;
+        color: #ff0000;
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        color:  #ff0000;
+    }
+    4% {
+        color: #ff4000;
+    }
+    8% {
+        color: #ff8000;
+    }
+    12% {
+        color: #ffbf00;
+    }
+    16% {
+        color: #ffff00;
+    }
+    20% {
+        color: #bfff00;
+    }
+    24% {
+        color: #80ff00;
+    }
+    28% {
+        color:  #40ff00;
+    }
+    32% {
+        color: #00ff00;
+    }
+    36% {
+        color: #00ff40;
+    }
+    40% {
+        color: #00ff80;
+    }
+    44% {
+        color:  #00ffbf;
+    }
+    48% {
+        color: #00ffff;
+    }
+    52% {
+        color: #00bfff;
+    }
+    56% {
+        color: #0080ff;
+    }
+    60% {
+        color: #0040ff;
+    }
+    64% {
+        color: #0000ff;
+    }
+    68% {
+        color: #4000ff;
+    }
+    72% {
+        color: #8000ff;
+    }
+    76% {
+        color:  #bf00ff;
+    }
+    80% {
+        color: #ff00ff;
+    }
+    84% {
+        color: #ff00bf;
+    }
+    88% {
+        color: #ff0080;
+    }
+    92% {
+        color: #ff0040;
+    }
+    96% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ff0000;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    animation-name: anim;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .grid-item {
+    background-color: rgb(5, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: #ff0080;
+    animation-name: anim2;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+
+  img{
+      width: 100%;
+      height: 100%;
+  }
+
+  .hidden{
+      overflow: hidden;
+  }
+
+  .img-anim:hover{
+      animation-name: anima;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes anima {
+      from {
+        width: 100%;
+        height: 100%;
+      }
+      to {
+        transform: scale(1.8);
+      }
+  }
